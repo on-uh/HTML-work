@@ -1,0 +1,23 @@
+
+title,h1,h2 {
+		font-size: 300%;
+	color: navy;
+	font-weight: normal;
+}
+
+p {
+	line-height: 150%; 
+	color: black;
+}
+
+body {
+	font-family: "Times New Roman", Garamond, serif;
+	font-size:160%;
+}
+
+.firstword {
+  font-size: 130%;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
