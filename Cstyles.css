@@ -1,23 +1,20 @@
-
-* {
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #fdf2f8, #f9a8d4); 
+    background: linear-gradient(135deg, #fdf2f8, #f9a8d4); /* light pink gradient */
     color: #111827;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-
 header {
-    background: #be185d; 
+    background: #be185d; /* deep pink */
     color: #fdf2f8;
     padding: 1rem 2rem;
     box-shadow: 0 2px 8px rgba(190, 24, 93, 0.5);
@@ -34,6 +31,21 @@ nav ul {
     gap: 1.5rem;
 }
 
+nav a {
+    color: #ffe4f1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding-bottom: 0.2rem;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a.active {
+    color: #ffffff;
+}
+
 main {
     flex: 1;
     display: flex;
@@ -43,7 +55,7 @@ main {
 }
 
 .calculator {
-    background: #fdf2f8; 
+    background: #fdf2f8; /* very light pink */
     padding: 2rem 2.5rem;
     border-radius: 12px;
     width: 100%;
@@ -76,14 +88,13 @@ main {
     background-color: #fff5fa;
 }
 
-
 .calculator button {
     margin-top: 1.5rem;
     width: 100%;
     padding: 0.7rem 1rem;
     border-radius: 999px;
     border: none;
-    background: #ec4899; 
+    background: #ec4899; /* main pink */
     color: #ffffff;
     font-size: 1rem;
     font-weight: 600;
@@ -102,14 +113,12 @@ main {
     box-shadow: 0 4px 10px rgba(219, 39, 119, 0.45);
 }
 
-
 #result {
     margin-top: 1.5rem;
     font-size: 1rem;
     font-weight: 600;
     color: #be185d;
 }
-
 
 footer {
     text-align: center;
@@ -120,23 +129,20 @@ footer {
     border-top: 1px solid rgba(248, 187, 208, 0.6);
 }
 
+footer a {
+    color: #ffe4f1;
+    text-decoration: none;
+}
 
-@media (max-width: 600px) {
-    header {
-        padding: 0.8rem 1rem;
-    }
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
 
-    header h1 {
-        font-size: 1.3rem;
-    }
-
-    nav ul {
-        gap: 1rem;
-    }
-
-    .calculator {
-        padding: 1.5rem 1.6rem;
-    }
+.copyright {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    opacity: 0.9;
 }
 
 @media (max-width: 600px) {
@@ -156,5 +162,3 @@ footer {
         padding: 1.5rem 1.6rem;
     }
 }
-
-
